@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>Desafio Oak</title>
+</head>
+
+<body>
+  <section class="main-section">
+    <div class="form-section">
+
+      <form id="form" class="form-grid">
+
+        <h2>Cadastrar produto</h2>
+
+        <div class="form-group">
+          <label for="nameProduct">Nome do Produto</label>
+          <input type="text" id="nameProduct" name="nameProduct" maxlength="64" placeholder="Nome Aqui" required>
+        </div>
+        <div class="form-group">
+          <label for="priceProduct">Preço do Produto</label>
+          <input type="number" id="priceProduct" name="priceProduct" step="0.01" placeholder="Preco aqui" required>
+        </div>
+        <div class="form-disp">
+          <p>Disponivel para venda?</p>
+          <div>
+            <label>Sim</label>
+            <input name="avaliableProduct" type="radio" value="Sim" checked>
+          </div>
+          <div>
+            <label>Não</label>
+            <input name="avaliableProduct" type="radio" value="Não">
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="descriptionProduct">Descrição do Produto</label>
+          <textarea name="descriptionProduct" id="descriptionProduct" cols="30" rows="6"
+            placeholder="Descreva o Produto aqui" maxlength="1280"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" >Cadastrar Produto</button>
+        </div>
+      </form>
+      
+    </div>
+    <div class="barrier"></div>
+    <div class="list-content">
+      <h1>Lista</h1>
+      <div class="list-itens" id="listItens">
+      </div>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>
