@@ -56,6 +56,7 @@ h1 {
   font-family: "arial", sans-serif;
   border: 2px solid #dfdfdf;
   border-radius: 3px;
+  border: none;
 }
 
 .form-disp {
@@ -110,7 +111,20 @@ h1 {
   margin-bottom: 5px;
 }
 
-@media (width <=720px) {
+.buttons-sort{
+  padding: 5px;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-group button:hover,
+.buttons-sort:hover{
+  background-color: #a0a0a0;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (width <=768px) {
   .barrier {
     width: 0%;
     height: 0%;
